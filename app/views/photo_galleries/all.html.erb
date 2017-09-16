@@ -1,0 +1,5 @@
+<%- @photos.each do |photo| %>
+  <%- # Use rails image tag helper here %>
+  <!-- <div> <%= photo.title %> </div> -->
+  <%= image_tag photo.file.url %>
+<% end %>

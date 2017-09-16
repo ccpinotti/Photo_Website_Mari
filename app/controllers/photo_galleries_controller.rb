@@ -1,7 +1,7 @@
 class PhotoGalleriesController < ApplicationController
   def all
     @artist = Artist.find(1)
-    @photo_gallery = PhotoGallery.where(title: 'all', user_id: @artist.id).first
+    @photos = Photo.where(artist_id: @artist.id)
   end
 
   def portraits
