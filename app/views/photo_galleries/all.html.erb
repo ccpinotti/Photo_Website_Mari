@@ -1,5 +1,9 @@
-<%- @photos.each do |photo| %>
-  <%- # Use rails image tag helper here %>
-  <!-- <div> <%= photo.title %> </div> -->
-  <%= image_tag photo.file.url %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <%- @photos.each do |photo| %>
+      <div class="col s4">
+        <%= image_tag(photo.file.url, height: '350') %>
+      </div>
+    <% end %>
+  </div>
+</div>
