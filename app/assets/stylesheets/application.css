@@ -16,6 +16,7 @@
 .app-header {
   height: 700px;
   max-width: 100%;
+  color: white;
 }
 .row {
   color: white;
@@ -43,4 +44,10 @@ h3 {
   width: 100%;
   color: white;
   text-align: center;
+  padding-right: 600px;
+  padding-top: 200px;
+}
+.nav2 {
+  display: inline;
+  color: white;
 }

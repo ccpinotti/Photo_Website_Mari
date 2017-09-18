@@ -6,3 +6,9 @@
   <a class="carousel-item"> <%= image_tag photo.file.url%><p><%= photo.title %></p> </a>
 <% end %>
 </div>
+<script>
+$(document).ready(function() {
+  $(".carousel").carousel({ fullWidth: true });
+  // $(".materialboxed").materialbox();
+});
+</script>
