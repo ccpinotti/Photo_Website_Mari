@@ -1,14 +1,15 @@
-<h1>Artists#portraits</h1>
-<%- # ERB tutorial %>
-<div class="carousel carousel-slider" >
-<%- @photos.each do |photo| %>
+<div class="carousel carousel-slider">
+  <%- @photos.each do |photo| %>
   <%- # Use rails image tag helper here %>
-  <a class="carousel-item"> <%= image_tag photo.file.url%><p><%= photo.title %></p> </a>
-<% end %>
+  <a class="carousel-item">
+    <%= image_tag photo.file.url%>
+    <p><%= photo.title %></p>
+  </a>
+  <% end %>
 </div>
 <script>
-$(document).ready(function() {
-  $(".carousel").carousel({ fullWidth: true });
-  // $(".materialboxed").materialbox();
-});
+  $(document).ready(function () {
+    $(".carousel").carousel({fullWidth: true});
+    // $(".materialboxed").materialbox();
+  });
 </script>
