@@ -11,14 +11,14 @@
 // about supported directives.
 //
 //
+//require 'rubygems'
+//require 'rmagick'
 
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-$(document).ready(function() {
-  $(".carousel").carousel();
-});
 
 $(document).ready(function() {
+  $(".carousel").carousel({ fullWidth: true });
   $(".materialboxed").materialbox();
 });
