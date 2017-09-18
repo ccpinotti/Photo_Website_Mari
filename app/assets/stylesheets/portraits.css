@@ -1,6 +1,8 @@
-/*.carousel {
-  height: 600px !important;
-}*/
+.carousel img {
+  height: 100vh;
+  background-size: cover;
+  width: 100vw;
+}
 .row {
   height: 200px;
   width: 400px;

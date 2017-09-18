@@ -16,8 +16,9 @@
 .app-header {
   height: 700px;
   max-width: 100%;
+  color: white;
 }
-.row {
+.nav2 {
   color: white;
   float: right;
   min-width: 100px;
@@ -25,6 +26,8 @@
   width: 100px;
   z-index: 1;
   text-align: right;
+  display: inline;
+  color: white;
 }
 nav.nav-center ul {
   text-align: center;
@@ -43,4 +46,10 @@ h3 {
   width: 100%;
   color: white;
   text-align: center;
+  padding-right: 600px;
+  padding-top: 200px;
+}
+
+.nav-wrapper {
+  font-size: 200%;
 }

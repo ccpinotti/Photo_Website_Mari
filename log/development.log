@@ -8659,3 +8659,1524 @@ Processing by PhotoGalleriesController#all as HTML
 Completed 200 OK in 56ms (Views: 40.4ms | ActiveRecord: 2.8ms)
 
 
+Started GET "/all" for 127.0.0.1 at 2017-09-18 09:58:31 -0700
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 1253ms (Views: 1118.5ms | ActiveRecord: 39.9ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 09:59:16 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 107ms (Views: 66.5ms | ActiveRecord: 27.4ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 09:59:35 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 128ms (Views: 111.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 09:59:38 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 75ms (Views: 69.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-09-18 09:59:41 -0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[36mPhoto Load (1.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (6.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY "photo_galleries"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (51.4ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (22.8ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (42.3ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (10.5ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (15.0ms)
+Completed 200 OK in 1419ms (Views: 687.2ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-09-18 09:59:43 -0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (1.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY "photo_galleries"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (66.7ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (8.0ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (64.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (5.9ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (11.6ms)
+Completed 200 OK in 438ms (Views: 403.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/photo?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 09:59:53 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (226.2ms)
+Completed 200 OK in 274ms (Views: 251.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/artist?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 09:59:54 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"artist"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY artists.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (92.9ms)
+Completed 200 OK in 139ms (Views: 120.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/photo_gallery?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 09:59:59 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo_gallery"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (182.3ms)
+Completed 200 OK in 257ms (Views: 225.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/photo?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 10:00:02 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhoto Load (1.9ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (1.5ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (137.4ms)
+Completed 200 OK in 191ms (Views: 169.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/admin/photo/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 10:00:07 -0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (8.6ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (7.7ms)
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc[0m
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (22.6ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_file_upload.html.haml (9.6ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY artists.id desc[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (13.7ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (34.6ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (176.3ms)
+Completed 200 OK in 221ms (Views: 206.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:03:11 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 225ms (Views: 182.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:03:27 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 76ms (Views: 67.9ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:03:41 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 58ms (Views: 51.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:03:51 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 81ms (Views: 72.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:04:00 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.3ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 67ms (Views: 60.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:04:17 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.5ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 63ms (Views: 56.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 10:04:26 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (5.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 83ms (Views: 70.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/admin/artist?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 10:06:53 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"artist"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY artists.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (107.1ms)
+Completed 200 OK in 229ms (Views: 127.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/photo_gallery?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 10:06:58 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo_gallery"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhotoGallery Load (0.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (79.3ms)
+Completed 200 OK in 109ms (Views: 94.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/photo?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 10:06:59 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (96.1ms)
+Completed 200 OK in 124ms (Views: 112.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/photo/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 10:07:00 -0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (3.0ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc[0m
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (11.1ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_file_upload.html.haml (5.2ms)
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY artists.id desc[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (6.2ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (9.9ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (74.2ms)
+Completed 200 OK in 101ms (Views: 91.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 10:09:22 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (2.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 260ms (Views: 220.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:09:23 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (8.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (4.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 200ms (Views: 159.7ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:09:25 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 52ms (Views: 43.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:10:41 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/Users/cpinotti/dev-projects/Photo_Website_Mari/app/views/layouts/application.html.erb:13: syntax error, unexpected ')'
+ 'application', media: 'all',);@output_buffer.safe_append='
+                              ^
+/Users/cpinotti/dev-projects/Photo_Website_Mari/app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/cpinotti/dev-projects/Photo_Website_Mari/app/views/layouts/application.html.erb:50: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:13: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:48: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:10:57 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 109ms (Views: 100.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 10:11:01 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 64ms (Views: 59.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:11:02 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (9.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (6.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 129ms (Views: 94.7ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:12:59 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 67ms (Views: 59.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 10:13:01 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (3.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 119ms (Views: 106.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:13:03 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.2ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (6.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 225ms (Views: 186.4ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:13:04 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (7.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 148ms (Views: 123.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 10:13:11 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 50ms (Views: 42.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 10:13:12 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (2.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (3.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (19.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 108ms (Views: 67.4ms | ActiveRecord: 25.3ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 10:13:20 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (3.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 73ms (Views: 62.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-18 10:48:59 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 102ms (Views: 85.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-09-18 11:42:12 -0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (18.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[36mArtist Load (11.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY "photo_galleries"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (152.4ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.8ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (24.4ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.4ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (6.0ms)
+Completed 200 OK in 935ms (Views: 762.8ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/admin/photo_gallery?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 11:42:19 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo_gallery"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhotoGallery Load (3.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mArtist Load (6.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  [1m[36mPhoto Load (6.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (179.5ms)
+Completed 200 OK in 259ms (Views: 196.1ms | ActiveRecord: 17.3ms)
+
+
+Started GET "/admin/photo?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 11:42:20 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (260.2ms)
+Completed 200 OK in 296ms (Views: 281.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/photo/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 11:42:22 -0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (2.8ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.6ms)
+  [1m[36mPhotoGallery Load (0.6ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (10.9ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_file_upload.html.haml (11.4ms)
+  [1m[36mArtist Load (8.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY artists.id desc[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (12.7ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (14.3ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (98.1ms)
+Completed 200 OK in 133ms (Views: 113.3ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/admin/photo?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 11:42:37 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.5ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (114.4ms)
+Completed 200 OK in 155ms (Views: 140.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/artist?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 11:54:20 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"artist"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mArtist Load (6.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY artists.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (162.2ms)
+Completed 200 OK in 287ms (Views: 189.9ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/admin/artist/1/edit?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 11:54:25 -0700
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"artist", "id"=>"1"}
+  [1m[36mArtist Load (6.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 ORDER BY "artists"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (3.3ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (23.8ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_text.html.haml (3.8ms)
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[35m (7.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (0.6ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc[0m
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (35.0ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (21.0ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/edit.html.haml within layouts/rails_admin/pjax (172.9ms)
+Completed 200 OK in 265ms (Views: 223.5ms | ActiveRecord: 15.6ms)
+
+
+Started PUT "/admin/artist/1/edit" for 127.0.0.1 at 2017-09-18 11:58:21 -0700
+Processing by RailsAdmin::MainController#edit as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FiWkzN5Qobvlc8ImBWkUxwrFSzhqaKA06k1GKnAFKLExaCF9PjU9XutufGoXi4f5O48k4EGh/aocSOO2s1011g==", "artist"=>{"first_name"=>"Mari", "last_name"=>"Pinotti", "email"=>"ccpinotti@gmail.com", "password"=>"[FILTERED]", "bio"=>"Mari is a photographer who specializes in portrait and documentary. \r\nBased out of San Francisco, CA she draws inspiration from the city, and the people she meets. Receiving her BFA in 2019 from the San Francisco Art Institute. She uses her knowledge to make work that truly shares the story of her subject. ", "photo_gallery_ids"=>["", "", "1"]}, "return_to"=>"http://localhost:3000/admin/artist", "_save"=>"", "model_name"=>"artist", "id"=>"1"}
+  [1m[36mArtist Load (19.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 ORDER BY "artists"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (14.2ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mPhotoGallery Load (2.3ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."artist_id" = $1[0m  [["artist_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (39.1ms)[0m  [1m[33mUPDATE "artists" SET "bio" = $1, "updated_at" = $2 WHERE "artists"."id" = $3[0m  [["bio", "Mari is a photographer who specializes in portrait and documentary. \r\nBased out of San Francisco, CA she draws inspiration from the city, and the people she meets. Receiving her BFA in 2019 from the San Francisco Art Institute. She uses her knowledge to make work that truly shares the story of her subject. "], ["updated_at", "2017-09-18 18:58:21.647311"], ["id", 1]]
+  [1m[35m (27.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/artist
+Completed 302 Found in 169ms (ActiveRecord: 103.0ms)
+
+
+Started GET "/admin/artist" for 127.0.0.1 at 2017-09-18 11:58:21 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"artist"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY artists.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (80.8ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.7ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (23.9ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (9.9ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (29.0ms)
+Completed 200 OK in 415ms (Views: 406.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 11:58:27 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 11:59:49 -0700
+  [1m[35m (13.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (3.9ms)
+Started GET "/all" for 127.0.0.1 at 2017-09-18 11:59:51 -0700
+Completed 200 OK in 1668ms (Views: 1585.9ms | ActiveRecord: 31.5ms)
+
+
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (1.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (119.4ms)
+Completed 200 OK in 474ms (Views: 230.9ms | ActiveRecord: 182.6ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 11:59:56 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 78ms (Views: 68.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 11:59:59 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.9ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 111ms (Views: 52.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 12:16:02 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 157ms (Views: 97.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-09-18 12:17:11 -0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (0.3ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY "photo_galleries"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (31.9ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (11.2ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (30.1ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (12.6ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (10.6ms)
+Completed 200 OK in 1353ms (Views: 614.5ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2017-09-18 12:17:13 -0700
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "photos"[0m
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY "photos"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (0.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY "photo_galleries"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (34.9ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (8.7ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (27.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (7.1ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.8ms)
+Completed 200 OK in 378ms (Views: 359.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/admin/artist?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 12:23:42 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"artist"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mArtist Load (3.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY artists.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (324.4ms)
+Completed 200 OK in 409ms (Views: 369.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/admin/photo_gallery?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 12:23:43 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo_gallery"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhotoGallery Load (0.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (94.4ms)
+Completed 200 OK in 163ms (Views: 126.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/photo?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 12:23:44 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (1.0ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (202.1ms)
+Completed 200 OK in 237ms (Views: 221.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-18 12:52:12 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 193ms (Views: 166.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 12:52:16 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.0ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 75ms (Views: 61.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 12:53:53 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.9ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 346ms (Views: 308.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 12:54:31 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.9ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 92ms (Views: 84.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 12:54:56 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 68ms (Views: 62.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 12:55:00 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 40.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 13:53:02 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 257ms (Views: 105.9ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 13:53:22 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (2.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (6.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 67ms (Views: 53.5ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 13:54:45 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (6.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (6.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 127ms (Views: 105.3ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 13:54:58 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (6.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 84ms (Views: 73.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 13:55:35 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 94ms (Views: 88.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 13:58:29 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (45.2ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <%- @photos.each do |photo| %>
+    4:       <div class="col s4">
+    5:         <%= @artist.first_name %>
+    6:         <%= image_tag(photo.file.url, height: '350') %>
+  
+app/views/artists/about.html.erb:3:in `_app_views_artists_about_html_erb__1147998947078835523_70249634789000'
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 13:58:57 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms)
+
+
+  
+SyntaxError (/Users/cpinotti/dev-projects/Photo_Website_Mari/app/views/artists/about.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/artists/about.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 13:59:14 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 100ms (Views: 95.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 13:59:46 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:01:24 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 198ms (Views: 195.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:01:27 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 45.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:02:00 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 90ms (Views: 86.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:02:02 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:02:56 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 97ms (Views: 92.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:04:03 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 179ms (Views: 158.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:04:26 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 133ms (Views: 128.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:05:03 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (11.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 61.6ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:05:05 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 38.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:05:41 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 60.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:06:32 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 129ms (Views: 123.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:06:42 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 80.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:07:39 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 140ms (Views: 120.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:08:03 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 105ms (Views: 97.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:08:47 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 148ms (Views: 143.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:08:57 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (2.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (7.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 96ms (Views: 70.7ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:09:06 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (6.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 199ms (Views: 137.9ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:09:09 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (2.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (9.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 133ms (Views: 113.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:09:11 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (12.1ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (5.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (20.2ms)
+Completed 200 OK in 135ms (Views: 93.1ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:09:12 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (7.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 112ms (Views: 90.9ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:09:13 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (8.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (1.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 167ms (Views: 133.9ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:09:41 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 115ms (Views: 108.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:09:44 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 56ms (Views: 50.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:11:20 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 239ms (Views: 222.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:11:26 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 61ms (Views: 54.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:11:55 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 84ms (Views: 79.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:11:57 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 58ms (Views: 52.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:12:36 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:13:15 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 91ms (Views: 85.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:13:49 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 90ms (Views: 85.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:14:17 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 106ms (Views: 102.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:14:33 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 95ms (Views: 90.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:14:42 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 47.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:16:36 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 187ms (Views: 152.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:16:40 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:17:19 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 74.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:17:44 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 75ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/artist/1/about" for 127.0.0.1 at 2017-09-18 14:17:50 -0700
+Processing by ArtistsController#about as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering artists/about.html.erb within layouts/application
+  Rendered artists/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:17:56 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (6.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (38.8ms)
+Completed 200 OK in 122ms (Views: 108.9ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:18:00 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.3ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.9ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 88ms (Views: 69.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:18:23 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (3.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 49ms (Views: 39.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:22:08 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 302ms (Views: 264.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:22:12 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (28.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (44.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (65.6ms)
+Completed 200 OK in 255ms (Views: 148.8ms | ActiveRecord: 74.5ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:23:03 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.0ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.8ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 178ms (Views: 139.0ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:23:17 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (7.2ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 65ms (Views: 47.7ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:26:15 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (1.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 193ms (Views: 153.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:26:43 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (7.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (17.8ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 165ms (Views: 128.0ms | ActiveRecord: 26.1ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:27:24 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.6ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 212ms (Views: 204.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:29:19 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 239ms (Views: 203.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:29:31 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (19.0ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 116ms (Views: 86.2ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/all" for 127.0.0.1 at 2017-09-18 14:29:45 -0700
+Processing by PhotoGalleriesController#all as HTML
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/all.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."artist_id" = $1[0m  [["artist_id", 1]]
+  Rendered photo_galleries/all.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:29:57 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (2.3ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 61ms (Views: 51.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/admin/photo?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 14:35:41 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax
+  [1m[36mPhoto Load (20.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.8ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (6.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (304.2ms)
+Completed 200 OK in 461ms (Views: 305.8ms | ActiveRecord: 27.6ms)
+
+
+Started GET "/admin/photo_gallery/1?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 14:35:50 -0700
+Processing by RailsAdmin::MainController#show as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo_gallery", "id"=>"1"}
+  [1m[36mPhotoGallery Load (6.9ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = $1 ORDER BY "photo_galleries"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/show.html.haml within layouts/rails_admin/pjax (33.7ms)
+Completed 200 OK in 91ms (Views: 65.8ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/admin/photo/9/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 14:36:00 -0700
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo", "id"=>"9"}
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 ORDER BY "photos"."id" ASC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_delete_notice.html.haml (5.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (20.9ms)
+Completed 200 OK in 59ms (Views: 46.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/photo/9/delete" for 127.0.0.1 at 2017-09-18 14:36:02 -0700
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"McdE24Ab7zAXsuDe4Xmz3Oxebl8bvcziC4RdGxdcya2WA/RoXU38HCreVmCBStVb0RDCBVL2tmG/wA3N32qo3Q==", "return_to"=>"http://localhost:3000/admin/photo", "model_name"=>"photo", "id"=>"9"}
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 ORDER BY "photos"."id" ASC LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (25.5ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = $1[0m  [["id", 9]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/009/original/IMG_0098.jpg
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/009/medium/IMG_0098.jpg
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/009/thumb/IMG_0098.jpg
+Redirected to http://localhost:3000/admin/photo
+Completed 302 Found in 54ms (ActiveRecord: 28.2ms)
+
+
+Started GET "/admin/photo" for 127.0.0.1 at 2017-09-18 14:36:02 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (116.4ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (9.9ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (33.1ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (17.9ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (13.3ms)
+Completed 200 OK in 7153ms (Views: 7142.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/photo/7/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 14:36:17 -0700
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo", "id"=>"7"}
+  [1m[36mPhoto Load (1.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 ORDER BY "photos"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_delete_notice.html.haml (5.7ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (22.0ms)
+Completed 200 OK in 59ms (Views: 45.1ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/admin/photo/7/delete" for 127.0.0.1 at 2017-09-18 14:36:19 -0700
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"52SbhCMzWxCDt1UpMyp8nOlk2Ri204LgGa2ujxbQ40OPW+CeXl7amGZxHP+15r8ruuc3lttaZ8whYTImPMaUlw==", "return_to"=>"http://localhost:3000/admin/photo", "model_name"=>"photo", "id"=>"7"}
+  [1m[36mPhoto Load (2.0ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 ORDER BY "photos"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = $1[0m  [["id", 7]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/007/original/IMG_0204-2.jpg
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/007/medium/IMG_0204-2.jpg
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/007/thumb/IMG_0204-2.jpg
+Redirected to http://localhost:3000/admin/photo
+Completed 302 Found in 26ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/admin/photo" for 127.0.0.1 at 2017-09-18 14:36:19 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (90.4ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (5.2ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (15.2ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (4.8ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (9.1ms)
+Completed 200 OK in 342ms (Views: 332.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:36:29 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.5ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 85ms (Views: 79.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:36:42 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 51ms (Views: 44.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/photo/11/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 14:37:14 -0700
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo", "id"=>"11"}
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 ORDER BY "photos"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_delete_notice.html.haml (4.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (19.1ms)
+Completed 200 OK in 60ms (Views: 47.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/admin/photo/11/delete" for 127.0.0.1 at 2017-09-18 14:37:16 -0700
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rQrQD/pJgwCdNTuCyX+wAtwy4A8xVSzO1ab5fbTB/N/taXp4qeAc3Iub3pCxlYrshznGqFiY+EWGnru9GZ9lPQ==", "return_to"=>"http://localhost:3000/admin/photo", "model_name"=>"photo", "id"=>"11"}
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 ORDER BY "photos"."id" ASC LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = $1[0m  [["id", 11]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/011/original/IMG_0484.jpg
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/011/medium/IMG_0484.jpg
+[paperclip] deleting /Users/cpinotti/dev-projects/Photo_Website_Mari/public/system/photos/files/000/000/011/thumb/IMG_0484.jpg
+Redirected to http://localhost:3000/admin/photo
+Completed 302 Found in 20ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/photo" for 127.0.0.1 at 2017-09-18 14:37:16 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.3ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (76.0ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (4.6ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (24.8ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.6ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (8.3ms)
+Completed 200 OK in 375ms (Views: 366.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/photo/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2017-09-18 14:37:18 -0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (8.7ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_field.html.haml (6.3ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "photo_galleries"[0m
+  [1m[36mPhotoGallery Load (0.7ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" ORDER BY photo_galleries.id desc[0m
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (30.0ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_file_upload.html.haml (9.2ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "artists"[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists" ORDER BY artists.id desc[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_form_filtering_select.html.haml (5.5ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/_submit_buttons.html.haml (15.4ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (156.3ms)
+Completed 200 OK in 206ms (Views: 176.8ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/admin/photo/new" for 127.0.0.1 at 2017-09-18 14:38:10 -0700
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iBHD4Id86JfsTL5jDMzipGleKncBS8cSpA1JYhukPMsYghbLvj/Dod1uJCLK5MK1FL7twZjtd1SLbUp6S57N/A==", "photo"=>{"title"=>"Looking Left", "description"=>"Female Model", "price"=>"10000", "photo_gallery_id"=>"1", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fc88aa363d0 @tempfile=#<Tempfile:/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/RackMultipart20170918-66349-9zmgcv.jpg>, @original_filename="IMG_0204-2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[file]\"; filename=\"IMG_0204-2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "artist_id"=>"1"}, "return_to"=>"http://localhost:3000/admin/photo", "_save"=>"", "model_name"=>"photo"}
+Command :: file -b --mime '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-1phxjli.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-2a429a.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-2a429a.jpg[0]'
+Command :: convert '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-2a429a.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/c4c0e991e7e96c75b42f6bd5b642960b20170918-66349-18weitx'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-2a429a.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-2a429a.jpg[0]'
+Command :: convert '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-2a429a.jpg[0]' -auto-orient -resize "100x100>" '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/c4c0e991e7e96c75b42f6bd5b642960b20170918-66349-udobm3'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/km/rd9wj0c97tj5qfn1lj8tpxg40000gn/T/9787d21931c76d4ceb3bcbcf2732a3f220170918-66349-lspqhy.jpg'
+  [1m[35mSQL (26.6ms)[0m  [1m[32mINSERT INTO "photos" ("title", "description", "price", "photo_gallery_id", "created_at", "updated_at", "file_file_name", "file_content_type", "file_file_size", "file_updated_at", "artist_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Looking Left"], ["description", "Female Model"], ["price", 10000], ["photo_gallery_id", 1], ["created_at", "2017-09-18 21:38:10.605228"], ["updated_at", "2017-09-18 21:38:10.605228"], ["file_file_name", "IMG_0204-2.jpg"], ["file_content_type", "image/jpeg"], ["file_file_size", 24881], ["file_updated_at", "2017-09-18 21:38:10.258270"], ["artist_id", 1]]
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/photo
+Completed 302 Found in 409ms (ActiveRecord: 32.6ms)
+
+
+Started GET "/admin/photo" for 127.0.0.1 at 2017-09-18 14:38:10 -0700
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"photo"}
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application
+  [1m[36mPhoto Load (0.7ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" ORDER BY photos.id desc LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."id" = 1[0m
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists" WHERE "artists"."id" = 1[0m
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (104.0ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_secondary_navigation.html.haml (20.3ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_navigation.html.haml (42.8ms)
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/_sidebar_navigation.html.haml (6.2ms)
+  Rendering /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml
+  Rendered /Users/cpinotti/.rvm/gems/ruby-2.4.0@photo/gems/rails_admin-1.2.0/app/views/layouts/rails_admin/pjax.html.haml (15.4ms)
+Completed 200 OK in 487ms (Views: 475.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/portraits" for 127.0.0.1 at 2017-09-18 14:38:15 -0700
+Processing by PhotoGalleriesController#portraits as HTML
+  [1m[36mArtist Load (0.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPhotoGallery Load (0.4ms)[0m  [1m[34mSELECT  "photo_galleries".* FROM "photo_galleries" WHERE "photo_galleries"."title" = $1 AND "photo_galleries"."artist_id" = $2 ORDER BY "photo_galleries"."id" ASC LIMIT $3[0m  [["title", "Portraits"], ["artist_id", 1], ["LIMIT", 1]]
+  Rendering photo_galleries/portraits.html.erb within layouts/application
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."photo_gallery_id" = $1[0m  [["photo_gallery_id", 1]]
+  Rendered photo_galleries/portraits.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 0.9ms)
+
+
